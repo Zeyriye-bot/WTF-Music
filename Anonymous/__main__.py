@@ -119,7 +119,7 @@ async def initiate_bot():
     console.print(f"\n[red]sᴛᴏᴘᴘɪɴɢ ʙᴏᴛ")
 
 
-home_text_pm = "await message.reply_sticker("CAADBAADWxcAAqbxcR4yeTJRtPe4UAI")"
+home_text_pm = """await message.reply_sticker("CAADBAADWxcAAqbxcR4yeTJRtPe4UAI")"""
 
 
 @app.on_message(filters.command("help") & filters.private)
