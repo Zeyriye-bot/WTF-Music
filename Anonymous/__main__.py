@@ -224,11 +224,11 @@ home_text_pm = f"""━━━━━━━━━━━━━━━━━━━━�
 ┣★ ᴄʀᴇᴀᴛᴏʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦🖤𝗕𝗢𝗬](https://t.me/anonymous_was_bot)
 ┣★ ᴜᴘᴅᴀᴛᴇs : [ᴀɴᴏɴʏᴍᴏᴜs sᴜᴘᴘᴏʀᴛ](https://t.me/AnonymousSupport)
 ┣★ sᴜᴘᴘᴏʀᴛ : [ᴀɴᴏɴʏᴍᴏᴜs Cʜᴀᴛ](https://t.me/AnonymousRobotSupport)
-┣★ ᴏᴡɴᴇʀ : [ɪᴛs ᴍᴇ ʙᴀʙʏ](tg://user?id={int(OWNER_ID)}
+┣★ ᴏᴡɴᴇʀ : ɪᴛs ᴍᴇ ʙᴀʙʏ
 ┗━━━━━━━━━━━━━━━━━┛
 
 💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
-ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](tg://user?id={int(OWNER_ID)}ʙᴀʙʏ...
+ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](telegram.me/anonymous_was_bot) ʙᴀʙʏ...
 ━━━━━━━━━━━━━━━━━━━━━━━━"""
 
 
@@ -363,11 +363,11 @@ async def help_parser(name, keyboard=None):
 ┣★ ᴄʀᴇᴀᴛᴏʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦🖤𝗕𝗢𝗬](https://t.me/anonymous_was_bot)
 ┣★ ᴜᴘᴅᴀᴛᴇs : [ᴀɴᴏɴʏᴍᴏᴜs sᴜᴘᴘᴏʀᴛ](https://t.me/AnonymousSupport)
 ┣★ sᴜᴘᴘᴏʀᴛ : [ᴀɴᴏɴʏᴍᴏᴜs Cʜᴀᴛ](https://t.me/AnonymousRobotSupport)
-┣★  ᴏᴡɴᴇʀ : [ɪᴛs ᴍᴇ ʙᴀʙʏ](tg://user?id={int(OWNER_ID)}
+┣★  ᴏᴡɴᴇʀ : ɪᴛs ᴍᴇ ʙᴀʙʏ
 ┗━━━━━━━━━━━━━━━━━┛
 
 💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
-ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](tg://user?id={int(OWNER_ID)}ʙᴀʙʏ...
+ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](telegram.me/anonymous_was_bot) ʙᴀʙʏ...
 ━━━━━━━━━━━━━━━━━━━━━━━━
 """.format(
             first_name=name
