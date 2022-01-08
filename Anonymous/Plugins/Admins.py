@@ -9,26 +9,26 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
                             InlineKeyboardMarkup, KeyboardButton, Message,
                             ReplyKeyboardMarkup, ReplyKeyboardRemove)
 
-from Yukki import BOT_USERNAME, MUSIC_BOT_NAME, app, db_mem
-from Yukki.Core.PyTgCalls import Queues
-from Yukki.Core.PyTgCalls.Converter import convert
-from Yukki.Core.PyTgCalls.Downloader import download
-from Yukki.Core.PyTgCalls.Yukki import (pause_stream, resume_stream, skip_video_stream,
+from Anonymous import BOT_USERNAME, MUSIC_BOT_NAME, app, db_mem
+from Anonymous.Core.PyTgCalls import Queues
+from Anonymous.Core.PyTgCalls.Converter import convert
+from Anonymous.Core.PyTgCalls.Downloader import download
+from Anonymous.Core.PyTgCalls.Anonymous import (pause_stream, resume_stream, skip_video_stream,
                                         skip_stream, stop_stream)
-from Yukki.Database import (is_active_chat, is_music_playing, music_off, remove_active_video_chat,
+from Anonymous.Database import (is_active_chat, is_music_playing, music_off, remove_active_video_chat,
                             music_on, remove_active_chat)
-from Yukki.Decorators.admins import AdminRightsCheck
-from Yukki.Decorators.checker import checker, checkerCB
-from Yukki.Inline import audio_markup, primary_markup, secondary_markup2
-from Yukki.Utilities.changers import time_to_seconds
-from Yukki.Utilities.chat import specialfont_to_normal
-from Yukki.Utilities.theme import check_theme
-from Yukki.Utilities.thumbnails import gen_thumb
-from Yukki.Utilities.timer import start_timer
-from Yukki.Utilities.youtube import get_yt_info_id
+from Anonymous.Decorators.admins import AdminRightsCheck
+from Anonymous.Decorators.checker import checker, checkerCB
+from Anonymous.Inline import audio_markup, primary_markup, secondary_markup2
+from Anonymous.Utilities.changers import time_to_seconds
+from Anonymous.Utilities.chat import specialfont_to_normal
+from Anonymous.Utilities.theme import check_theme
+from Anonymous.Utilities.thumbnails import gen_thumb
+from Anonymous.Utilities.timer import start_timer
+from Anonymous.Utilities.youtube import get_yt_info_id
 
 
-from Yukki.Utilities.youtube import get_m3u8
+from Anonymous.Utilities.youtube import get_m3u8
 
 loop = asyncio.get_event_loop()
 
