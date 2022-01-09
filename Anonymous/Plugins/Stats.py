@@ -1,6 +1,7 @@
 import asyncio
 import json
 import logging
+import multiprocessing
 import platform
 import re
 import socket
@@ -8,21 +9,20 @@ import time
 import uuid
 from datetime import datetime
 from sys import version as pyver
-import multiprocessing
 
 import psutil
+from pymongo import MongoClient
 from pyrogram import Client
 from pyrogram import __version__ as pyrover
 from pyrogram import filters
 from pyrogram.types import Message
-from pymongo import MongoClient
-from config import MONGO_DB_URI, MUSIC_BOT_NAME
-from config import STRING5, STRING4, STRING3, STRING2, STRING1
+
+from config import (MONGO_DB_URI, MUSIC_BOT_NAME, STRING1, STRING2, STRING3,
+                    STRING4, STRING5)
 from Anonymous import (ASS_CLI_1, ASS_CLI_2, ASS_CLI_3, ASS_CLI_4, ASS_CLI_5,
                    BOT_ID, MUSIC_BOT_NAME, SUDOERS, app, boottime)
 from Anonymous.Database import get_gbans_count, get_served_chats, get_sudoers
-from Anonymous.Inline import (stats1, stats2, stats3, stats4, stats5, stats6,
-                          stats7)
+from Anonymous.Inline import stats1, stats2, stats3, stats4, stats5, stats6, stats7
 from Anonymous.Plugins import ALL_MODULES
 from Anonymous.Utilities.ping import get_readable_time
 
@@ -83,7 +83,21 @@ async def stats_markup(_, CallbackQuery):
         await CallbackQuery.answer("Getting System Stats...", show_alert=True)
         sc = platform.system()
         arch = platform.machine()
-        cpu_count = multiprocessing.cpu_count()
+        p_core = psutil.cpu_count(logical=False)
+        t_core = psutil.cpu_count(logical=True)
+        try:
+            cpu_freq = psutil.cpu_freq().current
+            if cpu_freq >= 1000:
+                cpu_freq = f"{round(cpu_freq / 1000, 2)}GHz"
+            else:
+                cpu_freq = f"{round(cpu_freq, 2)}MHz"
+        except:
+            cpu_freq = "Unable to Fetch"
+        cupc = "**CPU Usage Per Core:**\n"
+        for i, percentage in enumerate(psutil.cpu_percent(percpu=True)):
+            cupc += f"Core {i}  : {percentage}%\n"
+        cupc += "**Total CPU Usage:**\n"
+        cupc += f"All Cores Usage: {psutil.cpu_percent()}%\n"
         ram = (
             str(round(psutil.virtual_memory().total / (1024.0 ** 3))) + " GB"
         )
@@ -96,10 +110,18 @@ async def stats_markup(_, CallbackQuery):
 **System Proc:** Online
 **Platform:** {sc}
 **Architecture:** {arch}
-**CPUs:** {cpu_count}v
 **Ram:** {ram}
 **Python Ver:** {pyver.split()[0]}
-**Pyrogram Ver:** {pyrover}"""
+**Pyrogram Ver:** {pyrover}
+
+[•]<u>**CPU Stats**</u>
+
+**Physical Cores:** {p_core}
+**Total Cores:** {t_core}
+**Cpu Frequency:** {cpu_freq}
+
+{cupc}
+"""
         await CallbackQuery.edit_message_text(smex, reply_markup=stats2)
     if command == "sto_stats":
         await CallbackQuery.answer(
@@ -151,12 +173,16 @@ async def stats_markup(_, CallbackQuery):
             pymongo = MongoClient(MONGO_DB_URI)
         except Exception as e:
             print(e)
-            return await CallbackQuery.edit_message_text("Failed to get Mongo DB stats", reply_markup=stats5)
+            return await CallbackQuery.edit_message_text(
+                "Failed to get Mongo DB stats", reply_markup=stats5
+            )
         try:
-            db = pymongo.Yukki
+            db = pymongo.Anonymous
         except Exception as e:
             print(e)
-            return await CallbackQuery.edit_message_text("Failed to get Mongo DB stats", reply_markup=stats5)
+            return await CallbackQuery.edit_message_text(
+                "Failed to get Mongo DB stats", reply_markup=stats5
+            )
         call = db.command("dbstats")
         database = call["db"]
         datasize = call["dataSize"] / 1024
@@ -224,7 +250,7 @@ async def stats_markup(_, CallbackQuery):
                     bots_ub += 1
                 elif t == "private":
                     privates_ub += 1
-        
+
         if STRING2 != "None":
             async for i in ASS_CLI_2.iter_dialogs():
                 t = i.chat.type
@@ -237,7 +263,7 @@ async def stats_markup(_, CallbackQuery):
                     bots_ub2 += 1
                 elif t == "private":
                     privates_ub2 += 1
-        
+
         if STRING3 != "None":
             async for i in ASS_CLI_3.iter_dialogs():
                 t = i.chat.type
@@ -277,7 +303,6 @@ async def stats_markup(_, CallbackQuery):
                 elif t == "private":
                     privates_ub5 += 1
 
-
         msg = "[•]<u>Assistant Stats</u>"
         if STRING1 != "None":
             msg += "\n\n<u>Assistant One:\n</u>"
@@ -286,7 +311,7 @@ async def stats_markup(_, CallbackQuery):
 **Channels:** {channels_ub}
 **Bots:** {bots_ub}
 **Users:** {privates_ub}"""
-        
+
         if STRING2 != "None":
             msg += "\n\n<u>Assistant Two:\n</u>"
             msg += f"""**Dialogs:** {total_ub2}
@@ -302,7 +327,7 @@ async def stats_markup(_, CallbackQuery):
 **Channels:** {channels_ub3}
 **Bots:** {bots_ub3}
 **Users:** {privates_ub3}"""
- 
+
         if STRING4 != "None":
             msg += "\n\n<u>Assistant Four:\n</u>"
             msg += f"""**Dialogs:** {total_ub4}
