@@ -255,7 +255,7 @@ async def update_(client, message):
         elif HEROKU_API_KEY == "" or HEROKU_APP_NAME == "":
             await message.reply_text("<b>HEROKU APP DETECTED!</b>\n\n<b>Make sure to add both</b> `HEROKU_API_KEY` **and** `HEROKU_APP_NAME` <b>vars correctly in order to be able to update remotely!</b>")
             return
-    response = await message.reply_text("Checking for available updates...")
+    response = await message.reply_text("🔎")
     try:
         repo = Repo()
     except GitCommandError:
