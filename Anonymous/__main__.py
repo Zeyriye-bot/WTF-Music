@@ -15,7 +15,7 @@ from youtubesearchpython import VideosSearch
 from config import LOG_GROUP_ID, STRING5, STRING4, STRING3, STRING2, STRING1, LOG_SESSION
 from Anonymous import (ASS_CLI_1, ASS_CLI_2, ASS_CLI_3, ASS_CLI_4, ASS_CLI_5, LOG_CLIENT,
                    ASSID1, ASSID2, ASSID3, ASSID4, ASSID5, ASSNAME1, ASSNAME2, OWNER_ID,
-                   ASSNAME3, ASSNAME4, ASSNAME5, BOT_ID, BOT_NAME, OWNER_USERNAME, app)
+                   ASSNAME3, ASSNAME4, ASSNAME5, BOT_ID, BOT_NAME, app)
 
 
 from Anonymous.Core.PyTgCalls.Anonymous import (pytgcalls1, pytgcalls2, pytgcalls3,
