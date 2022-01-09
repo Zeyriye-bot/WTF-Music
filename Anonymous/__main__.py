@@ -224,7 +224,7 @@ home_text_pm = f"""━━━━━━━━━━━━━━━━━━━━�
 ┣★ ᴄʀᴇᴀᴛᴏʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦🖤𝗕𝗢𝗬](https://t.me/anonymous_was_bot)
 ┣★ ᴜᴘᴅᴀᴛᴇs : [ᴀɴᴏɴʏᴍᴏᴜs sᴜᴘᴘᴏʀᴛ](https://t.me/AnonymousSupport)
 ┣★ sᴜᴘᴘᴏʀᴛ : [ᴀɴᴏɴʏᴍᴏᴜs Cʜᴀᴛ](https://t.me/AnonymousRobotSupport)
-┣★ ᴏᴡɴᴇʀ : [ɪᴛs ᴍᴇ ʙᴀʙʏ](t.me/{OWNER_USERNAME})
+┣★ ᴏᴡɴᴇʀ : ɪᴛs ᴍᴇ ʙᴀʙʏ
 ┗━━━━━━━━━━━━━━━━━┛
 
 💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
