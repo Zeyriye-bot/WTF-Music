@@ -22,7 +22,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/AnonymousBoy1025/AnonymousMusicBot")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
-
+OWNER_USERNAME = getenv("OWNER_USERNAME")
 if str(getenv("SUPPORT_CHANNEL")).strip() == "":
     SUPPORT_CHANNEL = None
 else:
