@@ -221,13 +221,13 @@ home_text_pm = f"""━━━━━━━━━━━━━━━━━━━━�
 ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs...
 ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ /
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴄʀᴇᴀᴛᴏʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 🖤 𝗕𝗢𝗬](https://t.me/anonymous_was_bot)
+┣★ ᴄʀᴇᴀᴛᴏʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 🖤 𝗕𝗢𝗬](tg://openmessage?user_id=1356469075)
 ┣★ ᴜᴘᴅᴀᴛᴇs :  [ᴜᴘᴅᴀᴛᴇs]({SUPPORT_CHANNEL})
 ┣★ sᴜᴘᴘᴏʀᴛ : [sᴜᴘᴘᴏʀᴛ]({SUPPORT_GROUP})
-┣★ ᴏᴡɴᴇʀ :     ɪᴛs ᴍᴇ ʙᴀʙʏ
+┣★ ᴍʏ ᴏᴡɴᴇʀ​ : [ɪᴛs ᴍᴇ ʙᴀʙʏ](tg://openmessage?user_id={OWNER_ID})
 ┗━━━━━━━━━━━━━━━━━┛
 
-💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ ʙᴀʙʏ...
+💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](tg://openmessage?user_id={OWNER_ID}) ʙᴀʙʏ...
 ━━━━━━━━━━━━━━━━━━━━━━━━"""
 
 
@@ -284,7 +284,7 @@ async def start_command(_, message):
                 reply_markup=keyboard,
             )
         if name[0] == "i":
-            m = await message.reply_text("🔎 sᴇᴀʀᴄʜɪɴɢ ɪɴꜰᴏ!")
+            m = await message.reply_text("🔎")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -358,13 +358,13 @@ async def help_parser(name, keyboard=None):
 ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs...
 ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ /
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴄʀᴇᴀᴛᴏʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 🖤 𝗕𝗢𝗬](https://t.me/anonymous_was_bot)
+┣★ ᴄʀᴇᴀᴛᴏʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 🖤 𝗕𝗢𝗬](tg://openmessage?user_id=1356469075)
 ┣★ ᴜᴘᴅᴀᴛᴇs :  [ᴜᴘᴅᴀᴛᴇs]({SUPPORT_CHANNEL})
 ┣★ sᴜᴘᴘᴏʀᴛ : [sᴜᴘᴘᴏʀᴛ]({SUPPORT_GROUP})
-┣★ ᴏᴡɴᴇʀ :     ɪᴛs ᴍᴇ ʙᴀʙʏ
+┣★ ᴍʏ ᴏᴡɴᴇʀ​ : [ɪᴛs ᴍᴇ ʙᴀʙʏ](tg://openmessage?user_id={OWNER_ID})
 ┗━━━━━━━━━━━━━━━━━┛
 
-💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ ʙᴀʙʏ...
+💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](tg://openmessage?user_id={OWNER_ID}) ʙᴀʙʏ...
 ━━━━━━━━━━━━━━━━━━━━━━━━
 """.format(
             first_name=name
