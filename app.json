@@ -2,7 +2,7 @@
   "name": "🖤 Anonymous Music Bot 🖤",
   "description": "A Telegram Music Bot written in Python using Pyrogram and Py-Tgcalls.",
   "repository": "https://github.com/AnonymousBoy1025/AnonymousMusicBot",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+  "logo": "https://telegra.ph/file/255d5d09aa39267797097.jpg",
   "keywords": [
   "python3",
   "telegram",
@@ -12,7 +12,6 @@
   "telegram-bot",
   "pyrogram"
   ],
-  "repository": "https://github.com/AnonymousBoy1025/AnonymousMusicBot",
   "stack": "container",
   "env": {
     "API_ID": {
@@ -87,11 +86,6 @@
     },
     "STRING_SESSION5": {
       "description": "A Pyrogram String Session. Leave blank if you dont want Multi-Assistant",
-      "value": "",
-      "required": false
-    },
-    "LOG_SESSION": {
-      "description": "A Pyrogram String Session for LOGGING. Leave blank if you dont want to LOG",
       "value": "",
       "required": false
     },
