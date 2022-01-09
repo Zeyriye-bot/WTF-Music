@@ -82,7 +82,7 @@ async def initiate_bot():
         "[bold green]Congratulations! Anonymous Music Bot has started successfully!\n"
     )
     try:
-        await app.send_message(LOG_GROUP_ID,"<b>Congratulations!! Music Bot has started successfully!</b>",)
+        await app.send_message(LOG_GROUP_ID,"<b>Congratulations! Music Bot has started successfully!</b>",)
     except Exception as e:
         print("\nBot has failed to access the log Channel. Make sure that you have added your bot to your log channel and promoted as admin!")
         console.print(f"\n[red]Stopping Bot")
@@ -96,7 +96,7 @@ async def initiate_bot():
     console.print(f"├[green] ID :- {BOT_ID}!")
     if STRING1 != "None":
         try:
-            await ASS_CLI_1.send_message(LOG_GROUP_ID,"<b>Congrats!! Assistant Client 1  has started successfully!</b>",)
+            await ASS_CLI_1.send_message(LOG_GROUP_ID,"<b>Congratulations! Assistant Client 1  has started successfully!</b>",)
         except Exception as e:
             print("\nAssistant Account 1 has failed to access the log Channel. Make sure that you have added your Assistant to your log channel and promoted as admin!")
             console.print(f"\n[red]Stopping Bot")
@@ -188,7 +188,7 @@ async def initiate_bot():
         try:
             await LOG_CLIENT.send_message(
                 LOG_GROUP_ID,
-                "<b>Congratulations!! Logger Client has started successfully!</b>",
+                "<b>Congratulations! Logger Client has started successfully!</b>",
             )
         except Exception as e:
             print(
@@ -227,8 +227,7 @@ home_text_pm = f"""━━━━━━━━━━━━━━━━━━━━�
 ┣★ ᴏᴡɴᴇʀ :     ɪᴛs ᴍᴇ ʙᴀʙʏ
 ┗━━━━━━━━━━━━━━━━━┛
 
-💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
-ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ ʙᴀʙʏ...
+💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ ʙᴀʙʏ...
 ━━━━━━━━━━━━━━━━━━━━━━━━"""
 
 
@@ -285,7 +284,7 @@ async def start_command(_, message):
                 reply_markup=keyboard,
             )
         if name[0] == "i":
-            m = await message.reply_text("🔎 Fetching Info!")
+            m = await message.reply_text("🔎 sᴇᴀʀᴄʜɪɴɢ ɪɴꜰᴏ!")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -299,26 +298,26 @@ async def start_command(_, message):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-🔍__**Video Track Information**__
+🔍__**ᴛʀᴀᴄᴋ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ**__
 
-❇️**Title:** {title}
+❇️**ᴛɪᴛʟᴇ:** {title}
 
-⏳**Duration:** {duration} Mins
-👀**Views:** `{views}`
-⏰**Published Time:** {published}
-🎥**Channel Name:** {channel}
-📎**Channel Link:** [Visit From Here]({channellink})
-🔗**Video Link:** [Link]({link})
+⏳**ᴅᴜʀᴀᴛɪᴏɴ:** {duration} Mins
+👀**ᴠɪᴇᴡs:** `{views}`
+⏰**ᴘᴜʙʟɪsʜᴇᴅ ᴛɪᴍᴇ:** {published}
+🎥**ᴘᴜʙʟɪsʜᴇᴅ ᴛɪᴍᴇ:** {channel}
+📎**ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ:** [Visit From Here]({channellink})
+🔗**ᴠɪᴅᴇᴏ ʟɪɴᴋ:** [Link]({link})
 
-⚡️ __Searched Powered By {BOT_NAME}__"""
+💕 sᴇᴀʀᴄʜ ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME}"""
             key = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="🎥 Watch Youtube Video", url=f"{link}"
+                            text="🎥 ᴡᴀᴛᴄʜ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="🔄 Close", callback_data="close"
+                            text="🔄 ᴄʟᴏsᴇ", callback_data="close"
                         ),
                     ],
                 ]
@@ -335,7 +334,7 @@ async def start_command(_, message):
                 sender_id = message.from_user.id
                 sender_name = message.from_user.first_name
                 umention = f"[{sender_name}](tg://user?id={int(sender_id)})"
-                return await LOG_CLIENT.send_message(LOG_GROUP_ID, f"{message.from_user.mention} has just started bot to check <code>VIDEO INFORMATION</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}")
+                return await LOG_CLIENT.send_message(LOG_GROUP_ID, f"{message.from_user.mention} ʜᴀs ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <code>ᴛʀᴀᴄᴋ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ</code>\n\n**ᴜsᴇʀ ɪᴅ:** {sender_id}\n**ᴜsᴇʀɴᴀᴍᴇ:** {sender_name}")
             return
     out = private_panel()
     await message.reply_text(
@@ -346,7 +345,7 @@ async def start_command(_, message):
         sender_id = message.from_user.id
         sender_name = message.from_user.first_name
         umention = f"[{sender_name}](tg://user?id={int(sender_id)})"
-        return await LOG_CLIENT.send_message(LOG_GROUP_ID, f"{message.from_user.mention} has just started Bot.\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}")
+        return await LOG_CLIENT.send_message(LOG_GROUP_ID, f"{message.from_user.mention} ʜᴀs ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ.\n\n**ᴜsᴇʀ ɪᴅ:** {sender_id}\n**ᴜsᴇʀɴᴀᴍᴇ:** {sender_name}")
     return
 
     
@@ -355,19 +354,17 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """━━━━━━━━━━━━━━━━━━━━━━━━
-🖤 ʜᴇʏ, ɪ ᴀᴍ {BOT_NAME} sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ
+        """🖤 ʜᴇʏ, ɪ ᴀᴍ {BOT_NAME} sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ
 ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs...
 ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ /
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴄʀᴇᴀᴛᴏʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦🖤𝗕𝗢𝗬](https://t.me/anonymous_was_bot)
-┣★ ᴜᴘᴅᴀᴛᴇs : [ᴀɴᴏɴʏᴍᴏᴜs sᴜᴘᴘᴏʀᴛ](https://t.me/AnonymousSupport)
-┣★ sᴜᴘᴘᴏʀᴛ : [ᴀɴᴏɴʏᴍᴏᴜs Cʜᴀᴛ](https://t.me/AnonymousRobotSupport)
-┣★  ᴏᴡɴᴇʀ : ɪᴛs ᴍᴇ ʙᴀʙʏ
+┣★ ᴄʀᴇᴀᴛᴏʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 🖤 𝗕𝗢𝗬](https://t.me/anonymous_was_bot)
+┣★ ᴜᴘᴅᴀᴛᴇs :  [ᴜᴘᴅᴀᴛᴇs]({SUPPORT_CHANNEL})
+┣★ sᴜᴘᴘᴏʀᴛ : [sᴜᴘᴘᴏʀᴛ]({SUPPORT_GROUP})
+┣★ ᴏᴡɴᴇʀ :     ɪᴛs ᴍᴇ ʙᴀʙʏ
 ┗━━━━━━━━━━━━━━━━━┛
 
-💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
-ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](telegram.me/anonymous_was_bot) ʙᴀʙʏ...
+💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ ʙᴀʙʏ...
 ━━━━━━━━━━━━━━━━━━━━━━━━
 """.format(
             first_name=name
@@ -390,11 +387,7 @@ async def help_button(client, query):
     next_match = re.match(r"help_next\((.+?)\)", query.data)
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
-    top_text = f"""Hello {query.from_user.first_name},
-
-Click on the buttons for more information.
-
-All commands can be used with: /
+    top_text = f"""ʜᴇʏ, ɪ ᴀᴍ {BOT_NAME} sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ/n/nᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ /
  """
     if mod_match:
         module = mod_match.group(1)
@@ -408,10 +401,10 @@ All commands can be used with: /
             [
                 [
                     InlineKeyboardButton(
-                        text="↪️ Back", callback_data="help_back"
+                        text="↪️ ʙᴀᴄᴋ", callback_data="help_back"
                     ),
                     InlineKeyboardButton(
-                        text="🔄 Close", callback_data="close"
+                        text="🔄 ᴄʟᴏsᴇ", callback_data="close"
                     ),
                 ],
             ]
