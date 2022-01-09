@@ -6,10 +6,12 @@ from pyrogram.types import (InlineKeyboardMarkup, InputMediaPhoto, Message,
                             Voice)
 from youtube_search import YoutubeSearch
 
+import Anonymous
 from Anonymous import (BOT_USERNAME, DURATION_LIMIT, DURATION_LIMIT_MIN,
                    MUSIC_BOT_NAME, app, db_mem)
 from Anonymous.Core.PyTgCalls.Converter import convert
 from Anonymous.Core.PyTgCalls.Downloader import download
+from Anonymous.Core.PyTgCalls.Tgdownloader import telegram_download
 from Anonymous.Decorators.assistant import AssistantAdd
 from Anonymous.Decorators.checker import checker
 from Anonymous.Decorators.logger import logging
@@ -123,7 +125,7 @@ async def play(_, message: Message):
                 pass
         except:
             pass 
-        file =  await message.reply_to_message.download()
+        file =  await telegram_download(message, mystic)
         return await start_stream_video(
             message,
             file,
