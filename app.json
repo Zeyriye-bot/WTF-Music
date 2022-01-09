@@ -124,7 +124,11 @@
       "description": "Repo's Branch Name",
       "value": "master",
       "required": true
-    }
+    },
+    "OWNER_USERNAME": {
+      "description": "Username of the user who will be the owner of the bot",
+      "value": "anonymous_was_bot"
+      "required": true
   },
   "PING_IMG": {
 
