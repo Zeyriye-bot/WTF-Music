@@ -15,7 +15,7 @@ from youtubesearchpython import VideosSearch
 from config import LOG_GROUP_ID, STRING5, STRING4, STRING3, STRING2, STRING1, LOG_SESSION
 from Anonymous import (ASS_CLI_1, ASS_CLI_2, ASS_CLI_3, ASS_CLI_4, ASS_CLI_5, LOG_CLIENT,
                    ASSID1, ASSID2, ASSID3, ASSID4, ASSID5, ASSNAME1, ASSNAME2, OWNER_ID,
-                   ASSNAME3, ASSNAME4, ASSNAME5, BOT_ID, BOT_NAME, app)
+                   ASSNAME3, ASSNAME4, ASSNAME5, BOT_ID, BOT_NAME, SUPPORT_CHANNEL, SUPPORT_GROUP, app)
 
 
 from Anonymous.Core.PyTgCalls.Anonymous import (pytgcalls1, pytgcalls2, pytgcalls3,
@@ -79,7 +79,7 @@ async def initiate_bot():
         console.print("")
         status.update(status="[bold blue]Importation Completed!",)
     console.print(
-        "[bold green]Congratulations!! Anonymous Music Bot has started successfully!\n"
+        "[bold green]Congratulations! Anonymous Music Bot has started successfully!\n"
     )
     try:
         await app.send_message(LOG_GROUP_ID,"<b>Congratulations!! Music Bot has started successfully!</b>",)
@@ -112,7 +112,7 @@ async def initiate_bot():
         try:
             await ASS_CLI_2.send_message(
                 LOG_GROUP_ID,
-                "<b>Congrats!! Assistant Client 2 has started successfully!</b>",
+                "<b>Congratulations! Assistant Client 2 has started successfully!</b>",
             )
         except Exception as e:
             print(
@@ -131,7 +131,7 @@ async def initiate_bot():
         try:
             await ASS_CLI_3.send_message(
                 LOG_GROUP_ID,
-                "<b>Congratulations!! Assistant Client 3 has started successfully!</b>",
+                "<b>Congratulations! Assistant Client 3 has started successfully!</b>",
             )
         except Exception as e:
             print(
@@ -150,7 +150,7 @@ async def initiate_bot():
         try:
             await ASS_CLI_4.send_message(
                 LOG_GROUP_ID,
-                "<b>Congrats!! Assistant Client 4 has started successfully!</b>",
+                "<b>Congratulations! Assistant Client 4 has started successfully!</b>",
             )
         except Exception as e:
             print(
@@ -169,7 +169,7 @@ async def initiate_bot():
         try:
             await ASS_CLI_5.send_message(
                 LOG_GROUP_ID,
-                "<b>Congratulations!! Assistant Client 5 has started successfully!</b>",
+                "<b>Congratulations! Assistant Client 5 has started successfully!</b>",
             )
         except Exception as e:
             print(
@@ -221,14 +221,14 @@ home_text_pm = f"""━━━━━━━━━━━━━━━━━━━━�
 ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs...
 ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ /
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴄʀᴇᴀᴛᴏʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦🖤𝗕𝗢𝗬](https://t.me/anonymous_was_bot)
-┣★ ᴜᴘᴅᴀᴛᴇs : [ᴀɴᴏɴʏᴍᴏᴜs sᴜᴘᴘᴏʀᴛ](https://t.me/AnonymousSupport)
-┣★ sᴜᴘᴘᴏʀᴛ : [ᴀɴᴏɴʏᴍᴏᴜs Cʜᴀᴛ](https://t.me/AnonymousRobotSupport)
-┣★ ᴏᴡɴᴇʀ : ɪᴛs ᴍᴇ ʙᴀʙʏ
+┣★ ᴄʀᴇᴀᴛᴏʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 🖤 𝗕𝗢𝗬](https://t.me/anonymous_was_bot)
+┣★ ᴜᴘᴅᴀᴛᴇs :  [ᴜᴘᴅᴀᴛᴇs]({SUPPORT_CHANNEL})
+┣★ sᴜᴘᴘᴏʀᴛ : [sᴜᴘᴘᴏʀᴛ]({SUPPORT_GROUP})
+┣★ ᴏᴡɴᴇʀ :     ɪᴛs ᴍᴇ ʙᴀʙʏ
 ┗━━━━━━━━━━━━━━━━━┛
 
 💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
-ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](telegram.me/anonymous_was_bot) ʙᴀʙʏ...
+ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ ʙᴀʙʏ...
 ━━━━━━━━━━━━━━━━━━━━━━━━"""
 
 
