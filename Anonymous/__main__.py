@@ -224,10 +224,9 @@ home_text_pm = f"""━━━━━━━━━━━━━━━━━━━━�
 ┣★ ᴄʀᴇᴀᴛᴏʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 🖤 𝗕𝗢𝗬](tg://openmessage?user_id=1356469075)
 ┣★ ᴜᴘᴅᴀᴛᴇs :  [ᴜᴘᴅᴀᴛᴇs]({SUPPORT_CHANNEL})
 ┣★ sᴜᴘᴘᴏʀᴛ : [sᴜᴘᴘᴏʀᴛ]({SUPPORT_GROUP})
-┣★ ᴍʏ ᴏᴡɴᴇʀ​ : [ɪᴛs ᴍᴇ ʙᴀʙʏ](tg://openmessage?user_id={OWNER_ID})
 ┗━━━━━━━━━━━━━━━━━┛
 
-💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](tg://openmessage?user_id={OWNER_ID}) ʙᴀʙʏ...
+💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ ʙᴀʙʏ...
 ━━━━━━━━━━━━━━━━━━━━━━━━"""
 
 
@@ -361,10 +360,9 @@ async def help_parser(name, keyboard=None):
 ┣★ ᴄʀᴇᴀᴛᴏʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 🖤 𝗕𝗢𝗬](tg://openmessage?user_id=1356469075)
 ┣★ ᴜᴘᴅᴀᴛᴇs :  [ᴜᴘᴅᴀᴛᴇs]({SUPPORT_CHANNEL})
 ┣★ sᴜᴘᴘᴏʀᴛ : [sᴜᴘᴘᴏʀᴛ]({SUPPORT_GROUP})
-┣★ ᴍʏ ᴏᴡɴᴇʀ​ : [ɪᴛs ᴍᴇ ʙᴀʙʏ](tg://openmessage?user_id={OWNER_ID})
 ┗━━━━━━━━━━━━━━━━━┛
 
-💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](tg://openmessage?user_id={OWNER_ID}) ʙᴀʙʏ...
+💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ ʙᴀʙʏ...
 ━━━━━━━━━━━━━━━━━━━━━━━━
 """.format(
             first_name=name
