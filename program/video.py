@@ -375,7 +375,7 @@ async def vstream(c: Client, m: Message):
                 await m.reply(
                     "» __only 720, 480, 360 allowed__ \n **now streaming video in 720p**"
                 )
-            loser = await c.send_message(chat_id, **processing stream baby...**")
+            loser = await c.send_message(chat_id, "**processing stream baby...**")
         else:
             await m.reply("**/vstream {link} {720/480/360}**")
 
