@@ -18,7 +18,7 @@ from core import (
 
 REPO = """
 » **ᴀɴᴏɴʏᴍᴏᴜs ᴍᴜsɪᴄ​** «
-» sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​ : [ᴍᴜsɪᴄ](https://github.com/AnonymousBoy1025/AnonymousMusic) « 
+» sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​ : [ᴍᴜsɪᴄ](https://github.com/AnonymousBoy1025/AnonymousMusic) «
 » ᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ​ [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](t.me/anonymous_was_bot) «
 """
 
