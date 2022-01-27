@@ -1,4 +1,6 @@
 <h1 align= center><b>💕 Anonymous Music 💕</b></h1>
+</p>
+<p align="center"><a href="https://t.me/DevilsHeavenMF"><img src="https://telegra.ph/file/fa43b9631ec92261eb8ae.jpg"></a></p>
 <h3 align = center> A Telegram Music Bot written in Python using Pyrogram and Py-Tgcalls for playing Audios & Videos in Telegram by the help of Telegram Video Chat Feature</h3>
 
 <p align="center">
@@ -109,8 +111,8 @@ $ sudo docker run anonymousmusic
 Command | Description
 :--- | :---
 • /ping | Check if alive or not
-• /start / !help | Show the help for commands
-• /mode / !switch | Switch the stream mode (audio/video)
+• /start / /help | Show the help for commands
+• /mode / /switch | Switch the stream mode (audio/video)
 • /p / /play [song name or youtube link] | Play a song in vc, if already playing add to queue
 • /radio / /stream [radio url or stream link] | Play a live stream in vc, if already playing add to queue
 • /pl / /playlist [playlist link] | Play the whole youtube playlist at once
