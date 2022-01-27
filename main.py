@@ -10,7 +10,7 @@ from pytgcalls.exceptions import GroupCallNotFound, NoActiveGroupCall
 from pytgcalls.types.stream import StreamAudioEnded, StreamVideoEnded
 from core.decorators import language, register, only_admins, handle_error
 from core import (
-    app, ydl, safone, search, is_sudo, is_admin, get_group, get_queue,
+    app, ydl, anonymous, search, is_sudo, is_admin, get_group, get_queue,
     pytgcalls, set_group, set_title, all_groups, clear_queue, skip_stream,
     check_yt_url, extract_args, start_stream, shuffle_queue, delete_messages,
     get_spotify_playlist, get_youtube_playlist)
