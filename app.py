@@ -55,7 +55,7 @@ START_TEXT = """━━━━━━━━━━━━━━━━━━━━━�
 START_BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("💕 sᴜᴘᴘᴏʀᴛ 💕", url="https://t.me/JaguarBots"),
+            InlineKeyboardButton("💕 sᴜᴘᴘᴏʀᴛ 💕", url="https://t.me/DevilsHeavenMF"),
             InlineKeyboardButton("🔥 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​ 🔥", url="https://github.com/AnonymousBoy1025/AnonymousMusic")
         ]
     ]
@@ -67,7 +67,7 @@ BUTTONS = InlineKeyboardMarkup(
             InlineKeyboardButton("❚ ❚", callback_data="pause"),
             InlineKeyboardButton("▷", callback_data="resume"),
             InlineKeyboardButton("↻", callback_data="skip"),
-            InlineKeyboardButton("⇆", callback_data="stop"),
+            InlineKeyboardButton("⇆", callback_data="end"),
             InlineKeyboardButton("🔇", callback_data="mute"),
             InlineKeyboardButton("🔊", callback_data="unmute")
         ],
@@ -217,7 +217,7 @@ async def callbacks(_, cq: CallbackQuery):
         except:
             await cq.answer("Nothing is playing.")   
 
-    elif data == "stop":
+    elif data == "end":
         await app.leave_group_call(chat_id)
         clear_queue(chat_id)
         await cq.answer("Stopped streaming.")  
@@ -269,7 +269,7 @@ async def video_play(_, message):
         return await message.reply_text(f"<b>Usage:</b> <code>/{state} [query]</code>")
     chat_id = message.chat.id
     if chat_id in LIVE_CHATS:
-        return await message.reply_text("❗️Please send <code>/stop</code> to end current live streaming before play songs or videos.")
+        return await message.reply_text("❗️Please send <code>/end</code> to end current live streaming before play songs or videos.")
     
     m = await message.reply_text("🔄 Processing...")
     if state == "play":
@@ -348,7 +348,7 @@ async def stream_func(_, message):
     m = await message.reply_text("🔄 Processing...")
     try:
         if chat_id in QUEUE:
-            return await m.edit("❗️Please send <code>/stop</code> to end voice chat before live streaming.")
+            return await m.edit("❗️Please send <code>/end</code> to end voice chat before live streaming.")
         elif chat_id in LIVE_CHATS:
             await app.change_stream(
                 chat_id,
@@ -420,7 +420,7 @@ async def playlist(_, message):
         await message.reply_text("❗Nothing is playing.")
     
 
-@bot.on_message(filters.command("stop") & filters.group)
+@bot.on_message(filters.command("end") & filters.group)
 @is_admin
 async def end(_, message):
     await message.delete()
