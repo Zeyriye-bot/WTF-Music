@@ -39,7 +39,7 @@ OWNER_ID = int(os.environ["OWNER_ID"])
 LIVE_CHATS = []
 
 START_TEXT = """━━━━━━━━━━━━━━━━━━━━━━
-🖤 ʜᴇʏ, <b>{}</b> 
+[🖤](https://telegra.ph/file/053f99956ccee8416b8f7.jpg) ʜᴇʏ, <b>{}</b> 
 
 ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs...
 ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /
