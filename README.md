@@ -1,20 +1,30 @@
-<h2 align= center><b>🎧 Anonymous Music 🎧</b></h2>
-<h4 align = center>A Powerful and Simple Telegram Bot<br> that can play audios & videos in Telegram group voice chats</h4>
-
-<p align='center'>
-<a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat-square&logo=python&color=blue"></a>
-<a href="https://github.com/AnonymousBoy1025/AnonymousMusic/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square"></a></p>
+<h1 align= center><b>💕 Anonymous Music 💕</b></h1>
+</p>
 
 <p align="center"><a href="https://telegram.me/DevilsHeavenMF"><img src="https://telegra.ph/file/053f99956ccee8416b8f7.jpg" height="300" width="310" alt="Music Player"></p>
-  
-## 👀 Features
+
+<h3 align = center> A Telegram Music Bot written in Python using Pyrogram and Py-Tgcalls for playing Audios & Videos in Telegram by the help of Telegram Video Chat Feature</h3>
+
+<p align="center">
+<a href="https://python.org"><img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python"></a>
+<br>
+    <img src="https://img.shields.io/github/license/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="LICENSE">
+    <img src="https://img.shields.io/github/contributors/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="Contributors">
+    <img src="https://img.shields.io/github/repo-size/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="Repository Size"> <br>
+    <img src="https://img.shields.io/github/forks/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="Forks">
+    <img src="https://img.shields.io/github/stars/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="Stars">
+    <img src="https://img.shields.io/github/watchers/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="Watchers">
+    <img src="https://img.shields.io/github/commit-activity/w/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="Commit Activity">
+    <img src="https://img.shields.io/github/issues/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="Issues">
+</p>
+
+## 🔥 <a name="features"></a>Features
 - Fast & Powerful player
 - Queues available
 - Multi chats supported
 - YouTube live links supported
 
 ## 🚀 Heroku Deploy
-- Fork the repo and change template link in heroku deploy button to forked repo link (else you will not able to deploy)
 - Change the app region to Europe (it will help to make the bot stable)
   
 <p align="left"><a href="https://dashboard.heroku.com/new?template=https://github.com/AnonymousBoy1025/AnonymousMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250" alt="Deploy"></a></p>
@@ -52,6 +62,13 @@
 
 <a href="https://telegram.me/DevilsHeavenMF"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram" alt="Group"></a><br>
 <a href="https://telegram.me/DevilsHeavenMF"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram" alt="Channel"></a>
+
+## ✨ <a name="credits"></a>Credits
+
+- [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](https://github.com/AnonymousBoy1025) for [Everything](https://github.com/AnonymousBoy1025/AnonymousMusic) 😇
+- [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram) 💕
+- [Laky-64](https://github.com/Laky-64) for [Py-TgCalls](https://github.com/pytgcalls/pytgcalls) 💕
+- And Thanks To All [Contributors](https://github.com/AnonymousBoy1025/AnonymousMusic/graphs/contributors)! 💕
 
 ## 📄 License
 
