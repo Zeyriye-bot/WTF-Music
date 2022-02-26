@@ -1,13 +1,13 @@
 {
-  "name": "Anonymous Music",
+  "name": "WTF Music",
   "description": "Bot to play songs in Telegram group voice chats. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
   "logo": "https://telegra.ph/file/053f99956ccee8416b8f7.jpg",
-  "repository": "https://github.com/AnonymousBoy1025/AnonymousMusic",
+  "repository": "https://github.com/AnonymousBoy1025/WTF-Music",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
-      "description": "Pyrogram session string",
+      "description": "Pyrogram session string of assistant account",
       "required": true
     },
     "BOT_TOKEN": {

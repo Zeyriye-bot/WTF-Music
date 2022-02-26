@@ -1,4 +1,4 @@
-<h1 align= center><b>💕 Anonymous Music 💕</b></h1>
+<h1 align= center><b>💕 WTF Music 💕</b></h1>
 </p>
 
 <p align="center"><a href="https://telegram.me/DevilsHeavenMF"><img src="https://telegra.ph/file/053f99956ccee8416b8f7.jpg" height="300" width="310" alt="Music Player"></p>
@@ -8,14 +8,14 @@
 <p align="center">
 <a href="https://python.org"><img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python"></a>
 <br>
-    <img src="https://img.shields.io/github/license/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="LICENSE">
-    <img src="https://img.shields.io/github/contributors/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="Contributors">
-    <img src="https://img.shields.io/github/repo-size/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="Repository Size"> <br>
-    <img src="https://img.shields.io/github/forks/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="Forks">
-    <img src="https://img.shields.io/github/stars/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="Stars">
-    <img src="https://img.shields.io/github/watchers/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="Watchers">
-    <img src="https://img.shields.io/github/commit-activity/w/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="Commit Activity">
-    <img src="https://img.shields.io/github/issues/AnonymousBoy1025/AnonymousMusic?style=for-the-badge" alt="Issues">
+    <img src="https://img.shields.io/github/license/AnonymousBoy1025/WTF-Music?style=for-the-badge" alt="LICENSE">
+    <img src="https://img.shields.io/github/contributors/AnonymousBoy1025/WTF-Music?style=for-the-badge" alt="Contributors">
+    <img src="https://img.shields.io/github/repo-size/AnonymousBoy1025/WTF-Music?style=for-the-badge" alt="Repository Size"> <br>
+    <img src="https://img.shields.io/github/forks/AnonymousBoy1025/WTF-Music?style=for-the-badge" alt="Forks">
+    <img src="https://img.shields.io/github/stars/AnonymousBoy1025/WTF-Music?style=for-the-badge" alt="Stars">
+    <img src="https://img.shields.io/github/watchers/AnonymousBoy1025/WTF-Music?style=for-the-badge" alt="Watchers">
+    <img src="https://img.shields.io/github/commit-activity/w/AnonymousBoy1025/WTF-Music?style=for-the-badge" alt="Commit Activity">
+    <img src="https://img.shields.io/github/issues/AnonymousBoy1025/WTF-Music?style=for-the-badge" alt="Issues">
 </p>
 
 ## 🔥 <a name="features"></a>Features
@@ -27,7 +27,7 @@
 ## 🚀 Heroku Deploy
 - Change the app region to Europe (it will help to make the bot stable)
   
-<p align="left"><a href="https://dashboard.heroku.com/new?template=https://github.com/AnonymousBoy1025/AnonymousMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250" alt="Deploy"></a></p>
+<p align="left"><a href="https://dashboard.heroku.com/new?template=https://github.com/AnonymousBoy1025/WTF-Music"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250" alt="Deploy"></a></p>
 
 ## 🏃‍♂ Pyrogram Session
 
@@ -64,11 +64,11 @@
 
 ## ✨ <a name="credits"></a>Credits
 
-- [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](https://github.com/AnonymousBoy1025) for [Everything](https://github.com/AnonymousBoy1025/AnonymousMusic) 😇
+- [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](https://github.com/AnonymousBoy1025) for [Everything](https://github.com/AnonymousBoy1025/WTF-Music) 😇
 - [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram) 💕
 - [Laky-64](https://github.com/Laky-64) for [Py-TgCalls](https://github.com/pytgcalls/pytgcalls) 💕
-- And Thanks To All [Contributors](https://github.com/AnonymousBoy1025/AnonymousMusic/graphs/contributors)! 💕
+- And Thanks To All [Contributors](https://github.com/AnonymousBoy1025/WTF-Music/graphs/contributors)! 💕
 
 ## 📄 License
 
-Distributed under the [MIT Licence.](https://github.com/AnonymousBoy1025/AnonymousMusic/blob/main/LICENSE) See `LICENSE.md` for more information.
+Distributed under the [MIT Licence.](https://github.com/AnonymousBoy1025/WTF-Music/blob/main/LICENSE) See `LICENSE.md` for more information.
