@@ -31,7 +31,7 @@
 
 ## 🏃‍♂ Pyrogram Session
 
-<p align="left"><a href="https://telegram.me/AnonymousStringBot"><img src="https://img.shields.io/badge/Generate%20On%20Repl-blueviolet?style=for-the-badge&logo=appveyor" width="245" alt="Repl"></a></p>  
+<p align="left"><a href="https://telegram.me/AnonymousStringBot"><img src="https://img.shields.io/badge/Generate%20On%20Telegram-blueviolet?style=for-the-badge&logo=appveyor" width="245" alt="Repl"></a></p>  
 
 ## 🛠 Config Vars
 
