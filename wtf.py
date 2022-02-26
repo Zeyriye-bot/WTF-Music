@@ -45,10 +45,10 @@ START_TEXT = """━━━━━━━━━━━━━━━━━━━━━�
 ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /
 
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴄʀᴇᴀᴛᴏʀ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](t.me/anonymous_was_bot)
+┣★ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](tg://user?id=1356469075)
 ┗━━━━━━━━━━━━━━━━━┛
 
-💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](t.me/anonymous_was_bot) ʙᴀʙʏ...
+💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](tg://user?id={OWNER_ID}) ʙᴀʙʏ...
 ━━━━━━━━━━━━━━━━━━━━━━
 """
 
@@ -56,7 +56,7 @@ START_BUTTONS = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton("💕 sᴜᴘᴘᴏʀᴛ 💕", url="https://t.me/DevilsHeavenMF"),
-            InlineKeyboardButton("🔥 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​ 🔥", url="https://github.com/AnonymousBoy1025/WTF-Music")
+            InlineKeyboardButton("🔥 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​ 🔥", url="https://telegra.ph/file/b2a4f66615d038f77bb46.mp4")
         ]
     ]
 )
@@ -68,8 +68,6 @@ BUTTONS = InlineKeyboardMarkup(
             InlineKeyboardButton("▷", callback_data="resume"),
             InlineKeyboardButton("‣‣I", callback_data="skip"),
             InlineKeyboardButton("▢", callback_data="end"),
-            InlineKeyboardButton("🔇", callback_data="mute"),
-            InlineKeyboardButton("🔊", callback_data="unmute")
         ],
         [
             InlineKeyboardButton("• ᴄʟᴏsᴇ​ •", callback_data="close")
@@ -222,20 +220,6 @@ async def callbacks(_, cq: CallbackQuery):
         clear_queue(chat_id)
         await cq.answer("» sᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ ʙᴀʙʏ.")  
 
-    elif data == "mute":
-        try:
-            await app.mute_stream(chat_id)
-            await cq.answer("Muted streaming.")
-        except:
-            await cq.answer("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ ʙᴀʙʏ.")
-            
-    elif data == "unmute":
-        try:
-            await app.unmute_stream(chat_id)
-            await cq.answer("Unmuted streaming.")
-        except:
-            await cq.answer("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ ʙᴀʙʏ.")
-            
     elif data == "skip":
         op = await skip_current_song(chat_id)
         if op == 0:
@@ -462,36 +446,6 @@ async def resume(_, message):
         try:
             await app.resume_stream(chat_id)
             await message.reply_text("» ᴛʀᴀᴄᴋ ʀᴇsᴜᴍᴇᴅ ʙᴀʙʏ.")
-        except:
-            await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ ʙᴀʙʏ.")
-    else:
-        await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ ʙᴀʙʏ.")
-        
-        
-@bot.on_message(filters.command("mute") & filters.group)
-@is_admin
-async def mute(_, message):
-    await message.delete()
-    chat_id = message.chat.id
-    if chat_id in QUEUE:
-        try:
-            await app.mute_stream(chat_id)
-            await message.reply_text("🔇 Muted streaming.")
-        except:
-            await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ ʙᴀʙʏ.")
-    else:
-        await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ ʙᴀʙʏ.")
-        
-        
-@bot.on_message(filters.command("unmute") & filters.group)
-@is_admin
-async def unmute(_, message):
-    await message.delete()
-    chat_id = message.chat.id
-    if chat_id in QUEUE:
-        try:
-            await app.unmute_stream(chat_id)
-            await message.reply_text("🔊 Unmuted streaming.")
         except:
             await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ ʙᴀʙʏ.")
     else:
