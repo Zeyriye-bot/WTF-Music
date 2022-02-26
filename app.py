@@ -64,10 +64,10 @@ START_BUTTONS = InlineKeyboardMarkup(
 BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("❚ ❚", callback_data="pause"),
+            InlineKeyboardButton("II", callback_data="pause"),
             InlineKeyboardButton("▷", callback_data="resume"),
-            InlineKeyboardButton("↻", callback_data="skip"),
-            InlineKeyboardButton("⇆", callback_data="end"),
+            InlineKeyboardButton("‣‣I", callback_data="skip"),
+            InlineKeyboardButton("▢", callback_data="end"),
             InlineKeyboardButton("🔇", callback_data="mute"),
             InlineKeyboardButton("🔊", callback_data="unmute")
         ],
