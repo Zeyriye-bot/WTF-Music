@@ -237,9 +237,35 @@ async def start_private(_, message):
                              reply_markup = START_BUTTONS)
     
 
-@bot.on_message(filters.command("start") & filters.group)
+@bot.on_message(filters.command(["ping", "alive"]) & filters.group)
 async def start_group(_, message):
-    await message.reply_text("🖤 <i>ɪ ᴀᴍ ᴀʟʀᴇᴀᴅʏ ᴀᴡᴀᴋᴇ ʙᴀʙʏ​ !</i>")
+    await message.reply_text("🖤 ɪ ᴀᴍ ᴀʟʀᴇᴀᴅʏ ᴀᴡᴀᴋᴇ ʙᴀʙʏ​ !")
+
+
+@bot.on_message(filters.command(["join", "assistant", " userbotjoin"]) & filters.group)
+@is_admin
+async def join_chat(c: bot, m: Message):
+    chat_id = m.chat.id
+    try:
+        invite_link = await m.chat.export_invite_link()
+        if "+" in invite_link:
+            link_hash = (invite_link.replace("+", "")).split("t.me/")[1]
+            await user.join_chat(f"https://t.me/joinchat/{link_hash}")
+        await m.chat.promote_member(
+            (await user.get_me()).id,
+            can_manage_voice_chats=True
+        )
+        return await user.send_message(chat_id, "🙂ᴀssɪsᴛᴀɴᴛ sᴜᴄᴄᴇssꜰᴜʟʟʏ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀᴛ ʙᴀʙʏ.​")
+    except UserAlreadyParticipant:
+        admin = await m.chat.get_member((await user.get_me()).id)
+        if not admin.can_manage_voice_chats:
+            await m.chat.promote_member(
+                (await user.get_me()).id,
+                can_manage_voice_chats=True
+            )
+            return await user.send_message(chat_id, "🙂ᴀssɪsᴛᴀɴᴛ ᴀʟʀᴇᴀᴅʏ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀᴛ ʙᴀʙʏ.​")
+        return await user.send_message(chat_id, "🙂ᴀssɪsᴛᴀɴᴛ ᴀʟʀᴇᴀᴅʏ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀᴛ ʙᴀʙʏ.​")
+
     
     
 @bot.on_message(filters.command(["play", "vplay"]) & filters.group)
