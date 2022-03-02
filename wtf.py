@@ -244,7 +244,7 @@ async def start_group(_, message):
 
 @bot.on_message(filters.command(["join", "assistant", " userbotjoin"]) & filters.group)
 @is_admin
-async def join_chat(c: bot, m: Message):
+async def join_chat(c: bot, m: message):
     chat_id = m.chat.id
     try:
         invite_link = await m.chat.export_invite_link()
