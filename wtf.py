@@ -55,6 +55,10 @@ START_TEXT = """━━━━━━━━━━━━━━━━━━━━━�
 START_BUTTONS = InlineKeyboardMarkup(
     [
         [
+            InlineKeyboardButton(
+                        "✗ ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴇʏ​ ✗", url="https://t.me/Dead_MusicBot?startgroup=true")
+        ],
+        [
             InlineKeyboardButton("💕 sᴜᴘᴘᴏʀᴛ 💕", url="https://t.me/DevilsHeavenMF"),
             InlineKeyboardButton("🔥 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​ 🔥", url="https://telegra.ph/file/b2a4f66615d038f77bb46.mp4")
         ]
@@ -245,7 +249,7 @@ async def start_group(_, message):
 @bot.on_message(filters.command(["join", "assistant", " userbotjoin"]) & filters.group)
 @is_admin
 async def start_group(_, message):
-    await message.reply_text("🖤 ɪ ᴀᴍ ᴀʟʀᴇᴀᴅʏ ᴀᴡᴀᴋᴇ ʙᴀʙʏ​ !")
+    await message.reply_text("ᴜsᴇʀʙᴏᴛ ɢᴏᴛ ꜰʟᴏᴏᴅᴡᴀɪᴛ ʙᴀʙʏ, ɪ sᴇɴᴛ ʜɪᴍ ᴛᴏ sʟᴇᴇᴘ ꜰᴏʀ ꜰᴇᴡ ᴍɪɴᴜᴛᴇs, ᴀᴅᴅ @DeadXAss ᴍᴀɴᴜᴀʟʟʏ sᴏ ᴛʜᴀɴ ɪ ᴄᴀɴ ᴘʟᴀʏ​ !")
 
     
 @bot.on_message(filters.command(["play", "vplay"]) & filters.group)
