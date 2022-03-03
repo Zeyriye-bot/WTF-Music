@@ -115,7 +115,7 @@ async def skip_current_song(chat_id):
                 )
             pop_an_item(chat_id)
             await bot.send_photo(chat_id, photo = thumb,
-                                 caption = f"» <b>ɴᴀᴍᴇ:</b> [{title}]({link}) | `{type}` \n\n🕕 <b>ᴅᴜʀᴀᴛɪᴏɴ:</b> {duration}",
+                                 caption = f"🕕 <b>ᴅᴜʀᴀᴛɪᴏɴ:</b> {duration}",
                                  reply_markup = BUTTONS)
             return [title, link, type, duration, thumb]
     else:
@@ -322,7 +322,7 @@ async def video_play(_, message):
         return await m.edit(str(e))
     
     
-@bot.on_message(filters.command(["saudio", "svideo"]) & filters.group)
+@bot.on_message(filters.command(["stream", "vstream"]) & filters.group)
 @is_admin
 async def stream_func(_, message):
     await message.delete()
@@ -333,10 +333,10 @@ async def stream_func(_, message):
         return await message.reply_text(f"<b>Usage:</b> <code>/{state} [link]</code>")
     chat_id = message.chat.id
     
-    if state == "saudio":
+    if state == "stream":
         damn = AudioPiped
         emj = "🎵"
-    elif state == "svideo":
+    elif state == "vstream":
         damn = AudioVideoPiped
         emj = "🎬"
     m = await message.reply_text("» ᴘʀᴏᴄᴇssɪɴɢ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʙᴀʙʏ...")
