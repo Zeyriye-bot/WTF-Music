@@ -3,8 +3,7 @@
   "description": "Bot to play songs in Telegram group voice chats. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
   "logo": "https://telegra.ph/file/086b35ba765a023e18498.jpg",
-  "repository": "https://github.com/Zeyriye-bot/seyriye
-seyriye ",
+  "repository": "https://github.com/Zeyriye-bot/seyriye",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
