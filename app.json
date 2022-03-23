@@ -1,9 +1,10 @@
 {
-  "name": "WTF Music",
+  "name": "sᴇʏʀɪʏᴇ ʀᴏʙᴏᴛ",
   "description": "Bot to play songs in Telegram group voice chats. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
-  "logo": "https://telegra.ph/file/053f99956ccee8416b8f7.jpg",
-  "repository": "https://github.com/AnonymousBoy1025/WTF-Music",
+  "logo": "https://telegra.ph/file/086b35ba765a023e18498.jpg",
+  "repository": "https://github.com/Zeyriye-bot/seyriye
+seyriye ",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
