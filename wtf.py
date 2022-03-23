@@ -39,16 +39,16 @@ OWNER_ID = int(os.environ["OWNER_ID"])
 LIVE_CHATS = []
 
 START_TEXT = """━━━━━━━━━━━━━━━━━━━━━━
-[🖤](https://telegra.ph/file/053f99956ccee8416b8f7.jpg) ʜᴇʏ, <b>{}</b> 
+[🖤](https://telegra.ph/file/086b35ba765a023e18498.jpg) ʀɪʙᴀᴊ, <b>{}</b> 
 
-ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs...
-ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /
+ᴡᴀxᴀᴀɴ ᴀᴀᴅ ᴜɢᴜ ᴅʜᴇᴇʀᴇᴇʏᴀᴀ ᴠᴄ ᴘʟᴀʏᴇʏ ʙᴏᴛ ᴇᴇ ᴋᴏᴏxᴀʜᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴋᴀ...
+ᴅʜᴀᴍᴍᴀᴀɴ ᴀᴍᴀʀʀᴀᴅᴀʏᴅᴀ ᴡᴀᴀ ʟᴀ ɪsᴛɪᴄᴍᴀᴀʟɪ ᴋᴀʀᴀᴀ : /
 
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](tg://user?id=1356469075)
+┣★ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [𝗥𝗜𝗕𝗔𝗝 𝗢𝗦𝗠𝗔𝗡𝗜](tg://user?id=1008271006)
 ┗━━━━━━━━━━━━━━━━━┛
 
-💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](tg://user?id=1356469075) ʙᴀʙʏ...
+💙 ʜᴀᴅɪɪ ᴀᴀᴅ ᴡᴀx sᴜ'ᴀᴀʟᴏ ᴀʜ ǫᴀʙᴛɪᴅ •ᴄᴀᴀᴡɪɴᴀᴀᴅ• [ᴏᴡɴᴇʀ](tg://user?id=1008271006) ʜᴏɢᴀᴀᴍɪʏᴇ...
 ━━━━━━━━━━━━━━━━━━━━━━
 """
 
@@ -56,11 +56,11 @@ START_BUTTONS = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                        "✗ ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴇʏ​ ✗", url="https://t.me/Dead_MusicBot?startgroup=true")
+                        "✪ ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴜᴏʀ ɢʀᴏᴜᴘ ✪", url="https://t.me/Seyriye_os_bot?startgroup=true")
         ],
         [
-            InlineKeyboardButton("💕 sᴜᴘᴘᴏʀᴛ 💕", url="https://t.me/DevilsHeavenMF"),
-            InlineKeyboardButton("🔥 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​ 🔥", url="https://telegra.ph/file/b2a4f66615d038f77bb46.mp4")
+            InlineKeyboardButton("🇸🇴 sᴜᴘᴘᴏʀᴛ 🇸🇴", url="https://t.me/teamosmani"),
+            InlineKeyboardButton("💙 ᴜᴘᴅᴀᴛᴇ 💙", url="https://t.me/osmanigroupbot"),
         ]
     ]
 )
@@ -68,10 +68,10 @@ START_BUTTONS = InlineKeyboardMarkup(
 BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("II", callback_data="pause"),
-            InlineKeyboardButton("▷", callback_data="resume"),
-            InlineKeyboardButton("‣‣I", callback_data="skip"),
-            InlineKeyboardButton("▢", callback_data="end"),
+            InlineKeyboardButton("⏸️", callback_data="pause"),
+            InlineKeyboardButton("▶️", callback_data="resume"),
+            InlineKeyboardButton("⏭️", callback_data="skip"),
+            InlineKeyboardButton("⏹️", callback_data="end"),
         ],
         [
             InlineKeyboardButton("• ᴄʟᴏsᴇ​ •", callback_data="close")
@@ -243,14 +243,13 @@ async def start_private(_, message):
 
 @bot.on_message(filters.command(["ping", "alive"]) & filters.group)
 async def start_group(_, message):
-    await message.reply_text("🖤 ɪ ᴀᴍ ᴀʟʀᴇᴀᴅʏ ᴀᴡᴀᴋᴇ ʙᴀʙʏ​ !")
+    await message.reply_text("🖤 ɪ ᴀᴍ ᴀʟʀᴇᴀᴅʏ ᴀᴡᴀᴋᴇ •ʀɪʙᴀᴊ•​ !")
 
 
 @bot.on_message(filters.command(["join", "assistant", " userbotjoin"]) & filters.group)
 @is_admin
 async def start_group(_, message):
-    await message.reply_text("ᴜsᴇʀʙᴏᴛ ɢᴏᴛ ꜰʟᴏᴏᴅᴡᴀɪᴛ ʙᴀʙʏ, ɪ sᴇɴᴛ ʜɪᴍ ᴛᴏ sʟᴇᴇᴘ ꜰᴏʀ ꜰᴇᴡ ᴍɪɴᴜᴛᴇs, ᴀᴅᴅ @DeadXAss ᴍᴀɴᴜᴀʟʟʏ sᴏ ᴛʜᴀɴ ɪ ᴄᴀɴ ᴘʟᴀʏ​ !")
-
+    await message.reply_text("ᴜsᴇʀʙᴏᴛ ɢᴏᴛ ꜰʟᴏᴏᴅᴡᴀɪᴛ •ʀɪʙᴀᴊ•, ɪ sᴇɴᴛ ʜɪᴍ ᴛᴏ sʟᴇᴇᴘ ꜰᴏʀ ꜰᴇᴡ ᴍɪɴᴜᴛᴇs, ᴀᴅᴅ @lovelyosmani ᴍᴀɴᴜᴀʟʟʏ sᴏ ᴛʜᴀɴ ɪ ᴄᴀɴ ᴘʟᴀʏ​ !")
     
 @bot.on_message(filters.command(["play", "vplay"]) & filters.group)
 async def video_play(_, message):
@@ -265,7 +264,7 @@ async def video_play(_, message):
     if chat_id in LIVE_CHATS:
         return await message.reply_text("❗️Please send <code>/end</code> to end current live streaming before play songs or videos.")
     
-    m = await message.reply_text("» ᴘʀᴏᴄᴇssɪɴɢ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʙᴀʙʏ...")
+    m = await message.reply_text("» ᴘʀᴏᴄᴇssɪɴɢ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ •ʀɪʙᴀᴊ•...")
     if state == "play":
         damn = AudioPiped
         ded = yt_audio
@@ -338,8 +337,8 @@ async def stream_func(_, message):
         emj = "🎵"
     elif state == "vstream":
         damn = AudioVideoPiped
-        emj = "🎬"
-    m = await message.reply_text("» ᴘʀᴏᴄᴇssɪɴɢ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʙᴀʙʏ...")
+        emj =📽️"
+    m = await message.reply_text("» ᴘʀᴏᴄᴇssɪɴɢ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ •ʀɪʙᴀᴊ•...")
     try:
         if chat_id in QUEUE:
             return await m.edit("❗️Please send <code>/end</code> to end voice chat before live streaming.")
@@ -411,7 +410,7 @@ async def playlist(_, message):
                 out = out + "\n" + f"<b>» {x}</b> - [{title}]({link}) | `{type}` \n"
             await message.reply_text(out, disable_web_page_preview=True)
     else:
-        await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ ʙᴀʙʏ.")
+        await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ •ʀɪʙᴀᴊ•.")
     
 
 @bot.on_message(filters.command("end") & filters.group)
@@ -422,14 +421,14 @@ async def end(_, message):
     if chat_id in LIVE_CHATS:
         await app.leave_group_call(chat_id)
         LIVE_CHATS.remove(chat_id)
-        return await message.reply_text("» sᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ ʙᴀʙʏ.")
+        return await message.reply_text("» sᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ •ʀɪʙᴀᴊ•.")
         
     if chat_id in QUEUE:
         await app.leave_group_call(chat_id)
         clear_queue(chat_id)
-        await message.reply_text("» sᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ ʙᴀʙʏ.")
+        await message.reply_text("» sᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ •ʀɪʙᴀᴊ•.")
     else:
-        await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ ʙᴀʙʏ.")
+        await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ •ʀɪʙᴀᴊ•.")
         
 
 @bot.on_message(filters.command("pause") & filters.group)
@@ -440,11 +439,11 @@ async def pause(_, message):
     if chat_id in QUEUE:
         try:
             await app.pause_stream(chat_id)
-            await message.reply_text("» ᴛʀᴀᴄᴋ ᴘᴀᴜsᴇᴅ ʙᴀʙʏ.")
+            await message.reply_text("» ᴛʀᴀᴄᴋ ᴘᴀᴜsᴇᴅ •ʀɪʙᴀᴊ•.")
         except:
-            await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ ʙᴀʙʏ.")
+            await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ •ʀɪʙᴀᴊ•.")
     else:
-        await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ ʙᴀʙʏ.")
+        await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ •ʀɪʙᴀᴊ•.")
         
         
 @bot.on_message(filters.command("resume") & filters.group)
@@ -455,11 +454,11 @@ async def resume(_, message):
     if chat_id in QUEUE:
         try:
             await app.resume_stream(chat_id)
-            await message.reply_text("» ᴛʀᴀᴄᴋ ʀᴇsᴜᴍᴇᴅ ʙᴀʙʏ.")
+            await message.reply_text("» ᴛʀᴀᴄᴋ ʀᴇsᴜᴍᴇᴅ •ʀɪʙᴀᴊ•.")
         except:
-            await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ ʙᴀʙʏ.")
+            await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ •ʀɪʙᴀᴊ•.")
     else:
-        await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ ʙᴀʙʏ.")
+        await message.reply_text("» ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴠᴄ •ʀɪʙᴀᴊ•.")
         
         
 @bot.on_message(filters.command("restart"))
@@ -467,7 +466,7 @@ async def restart(_, message):
     user_id = message.from_user.id
     if user_id != OWNER_ID:
         return
-    await message.reply_text("» <i>ʀᴇsᴛᴀʀᴛɪɴɢ ʙᴀʙʏ...</i>")
+    await message.reply_text("» <i>ʀᴇsᴛᴀʀᴛɪɴɢ •ʀɪʙᴀᴊ•...</i>")
     os.system(f"kill -9 {os.getpid()} && python3 app.py")
             
 
